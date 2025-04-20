@@ -1,0 +1,76 @@
+const totalMoney = 100000000000;
+let moneyLeft = totalMoney;
+
+const imageUrls = [
+  "https://source.unsplash.com/400x300/?technology",
+  "https://source.unsplash.com/400x300/?car",
+  "https://source.unsplash.com/400x300/?house",
+  "https://source.unsplash.com/400x300/?food",
+  "https://source.unsplash.com/400x300/?travel",
+  "https://source.unsplash.com/400x300/?luxury",
+  "https://source.unsplash.com/400x300/?fashion",
+  "https://source.unsplash.com/400x300/?airplane",
+  "https://source.unsplash.com/400x300/?boat",
+  "https://source.unsplash.com/400x300/?motorcycle",
+  "https://source.unsplash.com/400x300/?watch",
+  "https://source.unsplash.com/400x300/?jewelry",
+  "https://source.unsplash.com/400x300/?art",
+  "https://source.unsplash.com/400x300/?music",
+  "https://source.unsplash.com/400x300/?camera",
+  "https://source.unsplash.com/400x300/?laptop",
+  "https://source.unsplash.com/400x300/?phone",
+  "https://source.unsplash.com/400x300/?robot",
+  "https://source.unsplash.com/400x300/?building",
+  "https://source.unsplash.com/400x300/?mountain",
+  "https://source.unsplash.com/400x300/?beach",
+  "https://source.unsplash.com/400x300/?sports",
+  "https://source.unsplash.com/400x300/?bike",
+  "https://source.unsplash.com/400x300/?book",
+  "https://source.unsplash.com/400x300/?cinema",
+  "https://source.unsplash.com/400x300/?city",
+  "https://source.unsplash.com/400x300/?space",
+  "https://source.unsplash.com/400x300/?spaceship",
+  "https://source.unsplash.com/400x300/?island",
+  "https://source.unsplash.com/400x300/?hotel",
+  "https://source.unsplash.com/400x300/?restaurant",
+  "https://source.unsplash.com/400x300/?drone",
+  "https://source.unsplash.com/400x300/?game",
+  "https://source.unsplash.com/400x300/?tv",
+  "https://source.unsplash.com/400x300/?dog",
+  "https://source.unsplash.com/400x300/?cat",
+  "https://source.unsplash.com/400x300/?horse",
+  "https://source.unsplash.com/400x300/?gold",
+  "https://source.unsplash.com/400x300/?silver",
+  "https://source.unsplash.com/400x300/?diamond",
+  "https://source.unsplash.com/400x300/?painting",
+  "https://source.unsplash.com/400x300/?sculpture",
+  "https://source.unsplash.com/400x300/?garden",
+  "https://source.unsplash.com/400x300/?pool",
+  "https://source.unsplash.com/400x300/?gym",
+  "https://source.unsplash.com/400x300/?concert",
+  "https://source.unsplash.com/400x300/?festival",
+  "https://source.unsplash.com/400x300/?rocket",
+  "https://source.unsplash.com/400x300/?planet",
+  "https://source.unsplash.com/400x300/?cloud",
+  "https://source.unsplash.com/400x300/?sky",
+  "https://source.unsplash.com/400x300/?sunset",
+  "https://source.unsplash.com/400x300/?sunrise",
+  "https://source.unsplash.com/400x300/?interior",
+  "https://source.unsplash.com/400x300/?architecture",
+  "https://source.unsplash.com/400x300/?furniture",
+  "https://source.unsplash.com/400x300/?toy",
+  "https://source.unsplash.com/400x300/?yacht",
+  "https://source.unsplash.com/400x300/?wine",
+  "https://source.unsplash.com/400x300/?coffee"
+];
+
+const items = [];
+
+for (let i = 0; i < 60; i++) {
+  items.push({
+    name: "Item " + (i + 1),
+    price: (i + 1) * 100000,
+    img: imageUrls[i],
+    quantity: 0
+  });
+}
